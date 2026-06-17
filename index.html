@@ -1,108 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yap Ming Xuan - Student Portfolio</title>
-  <style>
-    /* Reset & Base */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f7fc; color: #333; line-height: 1.6; }
-
-    /* Container */
-    .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
-
-    /* Hero Section */
-    .hero { text-align: center; padding: 80px 20px; background: #fff; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); animation: fadeIn 1s ease-out; }
-    .hero h1 { font-size: 3rem; color: #1a73e8; animation: slideInDown 1s ease-out; }
-    .hero p.subtitle { font-size: 1.25rem; margin-top: 10px; color: #555; animation: fadeInUp 1s ease-out 0.5s backwards; }
-
-    /* Info Grid */
-    .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 40px; }
-    .info-grid .card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform .3s; }
-    .info-grid .card:hover { transform: translateY(-5px); }
-    .info-grid h3 { margin-bottom: 12px; color: #1a73e8; }
-    .info-grid ul { list-style: none; }
-    .info-grid li { margin-bottom: 8px; }
-
-    /* Typing Animation */
-    .typing { font-weight: bold; border-right: .1em solid; white-space: nowrap; overflow: hidden; }
-
-    /* Animations */
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-    @keyframes slideInDown { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-    @keyframes fadeInUp { from { transform: translateY(50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-    @keyframes typing { from { width: 0; } to { width: 100%; } }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <section class="hero">
-      <h1>Yap Ming Xuan</h1>
-      <p class="subtitle typing" id="role"></p>
-    </section>
-
-    <section class="info-grid">
-      <div class="card">
-        <h3>Contact</h3>
-        <ul>
-          <li>Address: 10 Lorong H Telok Kurau, Singapore 425993</li>
-          <li>Phone: +65 8911 5570</li>
-          <li>Email: 221541b@student.hci.edu.sg</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Academic Achievements</h3>
-        <ul>
-          <li><strong>MSG (2022-2024):</strong> Sec1: 1.88, Sec2: 1.25, Sec3: 1.43</li>
-          <li><strong>Exam Exemptions:</strong> Sec2 (History & Geography), Sec3 (English, Add Maths, Chemistry & Physics)</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Skills & Competencies</h3>
-        <ul>
-          <li>Front-end: HTML, CSS, JS</li>
-          <li>Python & Computing Talent Programme
-          <li>Expository Writing: Bronze, Queen’s Commonwealth Essay</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Projects</h3>
-        <ul>
-          <li><strong>Pawnify Engine (2023):</strong> Chess front-end, Stockfish, Bootstrap, HD</li>
-          <li><strong>SeatingPlan (2024):</strong> Seating tool, Firebase, HD</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Statement</h3>
-        <p>As a Sec 4 student at Hwa Chong Institution, I aspire to leverage my academic strengths and tech skills to address societal challenges. I aim to pursue computer science and apply my expertise to create innovative, socially impactful solutions.</p>
-      </div>
-      <div class="card">
-        <h3>Activities & Service</h3>
-        <ul>
-          <li>Scouts (2022–Present)</li>
-          <li>Walk for Rice, NTUC Health Volunteer, Bus Adventure, Autistic Centre Support</li>
-        </ul>
-      </div>
-    </section>
-  </div>
-
-  <script>
-    // Typing effect for role
-    const roleEl = document.getElementById('role');
-    const roles = ['Secondary 4 Student at Hwa Chong Institution, Singapore'];
-    let idx = 0, char = 0;
-
-    function type() {
-      if (char < roles[idx].length) {
-        roleEl.textContent += roles[idx].charAt(char);
-        char++;
-        setTimeout(type, 100);
-      } else {
-        roleEl.style.borderRight = 'none';
-      }
-    }
-    window.onload = () => type();
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Yap Ming Xuan is a student developer focused on AI engineering, computer vision, adversarial ML, full-stack prototypes, and agentic systems."
+    />
+    <meta property="og:title" content="Yap Ming Xuan | AI Engineering Portfolio" />
+    <meta
+      property="og:description"
+      content="Applied AI, computer vision, full-stack prototypes, and startup-ready engineering work."
+    />
+    <meta property="og:type" content="website" />
+    <title>Yap Ming Xuan | AI Engineering Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
