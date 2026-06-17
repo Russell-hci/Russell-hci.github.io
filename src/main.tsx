@@ -152,7 +152,7 @@ function App() {
               turning ambiguous ideas into working systems.
             </p>
             <div className="hero-actions" aria-label="Primary links">
-              <a className="button button-primary" href="/Yap_Ming_Xuan_Pragnition_Resume_Public.pdf">
+              <a className="button button-primary" href="/Yap_Ming_Xuan_Resume_Public.pdf">
                 <Download size={16} aria-hidden="true" />
                 Resume
               </a>
@@ -290,7 +290,7 @@ function App() {
             <Mail size={16} aria-hidden="true" />
             221541b@student.hci.edu.sg
           </a>
-          <a className="button button-secondary" href="/Yap_Ming_Xuan_Pragnition_Resume_Public.pdf">
+          <a className="button button-secondary" href="/Yap_Ming_Xuan_Resume_Public.pdf">
             <Download size={16} aria-hidden="true" />
             Download resume
           </a>
